@@ -1,0 +1,244 @@
+* {
+    user-select: none;
+    /* Disable selection */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.swal2-icon{
+    user-select: none;
+    -webkit-user-select:none;
+}
+
+.TimerOptions {
+    width: 95%;
+    /*padding: 15px 0;*/
+    position: fixed;
+    text-align: center;
+    transform: translate(2.5%);
+    background-color: #222;
+    /*box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);*/
+    backdrop-filter: blur(4px);
+    border-radius: 13px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.TimerOptions i {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.Gentimer {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Timer{
+    display: flex;
+    flex: 2 1 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cube {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+}
+
+.Scramble {
+    width: 95%;
+    padding: 30px 0 30px;
+    position: relative;
+    text-align: center;
+    transform: translate(2.5%);
+    background-color: #222;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 13px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.Scramble.Maximize {
+    height: 70vh;
+    justify-content: space-evenly;
+}
+
+.Scramble.Maximize h1 {
+    font-size: 100px !important;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.Scramble h1 {
+    width: 90%;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    
+}
+
+.Tiempos {
+    width: 95%;
+    height: 40vh;
+    padding: 15px 15px 0 15px;
+    position: relative;
+    text-align: center;
+    transform: translate(2.5%);
+    background-color: #222;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 13px;
+    margin-top: 10px;
+    z-index: 1;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    scroll-margin-top: 10px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px grey;
+
+    border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3f3f3f;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7b7b7b;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+caption {
+    caption-side:initial;
+    text-align: center;
+}
+
+.fa-refresh,
+.fa-times,
+.fa-archive {
+    cursor: pointer;
+    background-color: rgb(80, 80, 238);
+    padding: 15px;
+    width: 46px;
+    height: 46px;
+}
+
+.fa-refresh:hover,
+.fa-times:hover,
+.fa-archive:hover {
+    background-color: rgb(55, 55, 165);
+    transition: all 200ms ease-in-out;
+
+}
+
+.Options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.table .Fila {
+    vertical-align: middle !important;
+}
+
+.fa-trash {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: rgb(238, 83, 80);
+    color: #fff;
+}
+
+.Time {
+    font-weight: normal;
+    font-size: 50px !important;
+    letter-spacing: normal !important;
+}
+
+.Average {
+    font-weight: normal;
+    font-size: 20px !important;
+    letter-spacing: normal !important;
+}
+
+.table-dark {
+    background-color: #222 !important;
+}
+
+@media screen and (max-width: 850px) {
+    .Scramble h1 {
+        width: 90%;
+        font-size: x-large;
+        transform: translate(6%);
+    }
+    .Gentimer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .Timer{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .Info {
+        display: none;
+    }
+
+    .TimerOptions i {
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    .fa-refresh,
+    .fa-times,
+    .fa-archive {
+        background-color: rgb(80, 80, 238);
+    }
+
+    .fa-refresh:hover,
+    .fa-times:hover,
+    .fa-archive:hover {
+        background-color: rgb(80, 80, 238);
+    }
+
+    .fa-refresh:active,
+    .fa-times:active,
+    .fa-archive:active {
+        background-color: rgb(55, 55, 165);
+        transition: all 100ms ease-in-out;
+    }
+
+
+
+
+
+}

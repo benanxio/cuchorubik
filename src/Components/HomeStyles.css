@@ -1,0 +1,15 @@
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0,120,3);
+    background: linear-gradient(
+        90deg, rgba(0,120,3,1) 0%,
+        rgba(13,170,22,1) 46%,
+        rgba(26,189,0,1) 100%);
+
+    padding-top: 110px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
